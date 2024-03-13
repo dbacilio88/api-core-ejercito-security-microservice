@@ -1,0 +1,1179 @@
+{
+	"info": {
+		"_postman_id": "03915ce7-b92b-45b1-a043-7eff285a3a27",
+		"name": "project-ep",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18542737"
+	},
+	"item": [
+		{
+			"name": "division-status",
+			"item": [
+				{
+					"name": "find-all",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/division-status",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"division-status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find-by-id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/division-status/id/1/status",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"division-status",
+								"id",
+								"1",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find-by-uuid",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/division-status/uuid/65a79098-8039-43e7-a2d7-800707dbd8fe/status",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"division-status",
+								"uuid",
+								"65a79098-8039-43e7-a2d7-800707dbd8fe",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"code\": \"ACTIVATED\",\r\n        \"description\": \"DIVISION ACTIVATED\",\r\n        \"name\": \"ACTIVATED\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/division-status/create",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"division-status",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"INACTIVATED\",\r\n    \"description\": \"DIVISION INACTIVATED\",\r\n    \"id\": 40,\r\n    \"name\": \"INACTIVATED\",\r\n    \"uuId\": \"65a79098-8039-43e7-a2d7-800707dbd8fe\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/division-status/update",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"division-status",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/division-status/delete/uuId/1e47bce1-8f3f-42f8-b418-51abd2153d43/status",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"division-status",
+								"delete",
+								"uuId",
+								"1e47bce1-8f3f-42f8-b418-51abd2153d43",
+								"status"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "brigade-status",
+			"item": [
+				{
+					"name": "find-all",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/brigade-status",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"brigade-status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find-by-id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/brigade-status/id/2/status",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"brigade-status",
+								"id",
+								"2",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find-by-uuid",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/brigade-status/uuid/aa705bb5-ae7a-4c39-a5a8-a4519ed57836/status",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"brigade-status",
+								"uuid",
+								"aa705bb5-ae7a-4c39-a5a8-a4519ed57836",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"code\": \"INACTIVATED\",\r\n        \"description\": \"BRIGADE INACTIVATED\",\r\n        \"name\": \"INACTIVATED\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/brigade-status/create",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"brigade-status",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"INACTIVATED\",\r\n    \"description\": \"BRIGADE INACTIVATED\",\r\n    \"id\": 40,\r\n    \"name\": \"INACTIVATED\",\r\n    \"uuId\": \"e6a7e02e-3fdb-4853-8d1d-642b120aea6c\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/brigade-status/update",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"brigade-status",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/brigade-status/delete/uuId/e6a7e02e-3fdb-4853-8d1d-642b120aea6c/status",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"brigade-status",
+								"delete",
+								"uuId",
+								"e6a7e02e-3fdb-4853-8d1d-642b120aea6c",
+								"status"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "unit-status",
+			"item": [
+				{
+					"name": "find-all",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/unit-status",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"unit-status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find-by-id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/unit-status/id/1/status",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"unit-status",
+								"id",
+								"1",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find-by-uuid",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/unit-status/uuid/7f1e409c-145c-42c6-a616-86cc7777c3b2/status",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"unit-status",
+								"uuid",
+								"7f1e409c-145c-42c6-a616-86cc7777c3b2",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"code\": \"ACTIVATED\",\r\n        \"description\": \"UNIT ACTIVATED\",\r\n        \"name\": \"ACTIVATED\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/unit-status/create",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"unit-status",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"ACTIVATED\",\r\n    \"description\": \"UNIT ACTIVATED\",\r\n    \"id\": 2,\r\n    \"name\": \"ACTIVATED\",\r\n    \"uuId\": \"d4a8ea65-dd74-4d7f-8974-6dbd76c7450b\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/unit-status/update",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"unit-status",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/unit-status/delete/uuId/1e47bce1-8f3f-42f8-b418-51abd2153d43/status",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"unit-status",
+								"delete",
+								"uuId",
+								"1e47bce1-8f3f-42f8-b418-51abd2153d43",
+								"status"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "divisions",
+			"item": [
+				{
+					"name": "find-all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/divisions?limit=4&page=1",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"divisions"
+							],
+							"query": [
+								{
+									"key": "statusId",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "4"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find-by-id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/divisions/id/4/division",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"divisions",
+								"id",
+								"4",
+								"division"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find-by-uuid",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/divisions/uuid/848a52e0-0350-4f5d-a378-37219ab77202/division",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"divisions",
+								"uuid",
+								"848a52e0-0350-4f5d-a378-37219ab77202",
+								"division"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"65a79098-8039-43e7-a2d7-800707dbd8fe\",\r\n    \"code\": \"03\",\r\n    \"description\": \"COTA\",\r\n    \"name\": \"COtA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/divisions/create",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"divisions",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"02\",\r\n    \"created\": \"2024-03-09T05:07:02.574214800Z\",\r\n    \"description\": \"COTE\",\r\n    \"id\": 1,\r\n    \"name\": \"COTE\",\r\n    \"status\": \"65a79098-8039-43e7-a2d7-800707dbd8fe\",\r\n    \"uuId\": \"6263727d-f588-4ea6-871e-bf1c57e60e4d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/divisions/update",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"divisions",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/divisions/delete/uuId/848a52e0-0350-4f5d-a378-37219ab77202/division",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"divisions",
+								"delete",
+								"uuId",
+								"848a52e0-0350-4f5d-a378-37219ab77202",
+								"division"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "brigades",
+			"item": [
+				{
+					"name": "find-all",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/brigades?divisionId=2&statusId=2&limit=4&page=2",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"brigades"
+							],
+							"query": [
+								{
+									"key": "divisionId",
+									"value": "2"
+								},
+								{
+									"key": "statusId",
+									"value": "2"
+								},
+								{
+									"key": "limit",
+									"value": "4"
+								},
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find-by-id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/brigades/id/3/brigade",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"brigades",
+								"id",
+								"3",
+								"brigade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find-by-uuid",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/brigades/uuid/5f9b2b73-7d46-4cba-85a9-d1369253e1a4/brigade",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"brigades",
+								"uuid",
+								"5f9b2b73-7d46-4cba-85a9-d1369253e1a4",
+								"brigade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"aa705bb5-ae7a-4c39-a5a8-a4519ed57836\",\r\n    \"code\": \"0010\",\r\n    \"description\": \"0010\",\r\n    \"name\": \"0010\",\r\n    \"division\":\"6263727d-f588-4ea6-871e-bf1c57e60e4d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/brigades/create",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"brigades",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"0211\",\r\n    \"created\": \"2024-03-09T05:54:53.229637900Z\",\r\n    \"description\": \"COTE\",\r\n    \"division\": \"6263727d-f588-4ea6-871e-bf1c57e60e4d\",\r\n    \"id\": 2,\r\n    \"name\": \"COTE\",\r\n    \"status\": \"aa705bb5-ae7a-4c39-a5a8-a4519ed57836\",\r\n    \"uuId\": \"1c6f37ca-76c1-4d4a-8243-ffb407171ff3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/brigades/update",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"brigades",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/brigades/delete/uuId/1c6f37ca-76c1-4d4a-8243-ffb407171ff3/brigade",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"brigades",
+								"delete",
+								"uuId",
+								"1c6f37ca-76c1-4d4a-8243-ffb407171ff3",
+								"brigade"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "units",
+			"item": [
+				{
+					"name": "find-all",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/units?brigadeId=3&limit=4&page=1",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"units"
+							],
+							"query": [
+								{
+									"key": "brigadeId",
+									"value": "3"
+								},
+								{
+									"key": "statusId",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "4"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find-by-id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/units/id/4/unit",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"units",
+								"id",
+								"4",
+								"unit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find-by-uuid",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/units/uuid/848a52e0-0350-4f5d-a378-37219ab77202/unit",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"units",
+								"uuid",
+								"848a52e0-0350-4f5d-a378-37219ab77202",
+								"unit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"d4a8ea65-dd74-4d7f-8974-6dbd76c7450b\",\r\n    \"code\": \"021112\",\r\n    \"description\": \"COTA\",\r\n    \"name\": \"COTA\",\r\n    \"brigade\":\"5f9b2b73-7d46-4cba-85a9-d1369253e1a4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/units/create",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"units",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brigade\": \"5f9b2b73-7d46-4cba-85a9-d1369253e1a4\",\r\n    \"code\": \"021111\",\r\n    \"created\": \"2024-03-09T06:02:50.832437900Z\",\r\n    \"description\": \"COTE\",\r\n    \"id\": 3,\r\n    \"name\": \"COTE\",\r\n    \"status\": \"d4a8ea65-dd74-4d7f-8974-6dbd76c7450b\",\r\n    \"uuId\": \"57c214c4-88ab-489b-84f5-5076026b6f5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/units/update",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"units",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Request-Id",
+								"value": "fc6007c7-aea8-4d56-abc6-c939411f1755",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api-host-microservice}}/api-core-ejercito-dependencies-microservice/v1/units/delete/uuId/848a52e0-0350-4f5d-a378-37219ab77202/unit",
+							"host": [
+								"{{api-host-microservice}}"
+							],
+							"path": [
+								"api-core-ejercito-dependencies-microservice",
+								"v1",
+								"units",
+								"delete",
+								"uuId",
+								"848a52e0-0350-4f5d-a378-37219ab77202",
+								"unit"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
