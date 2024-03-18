@@ -1,6 +1,6 @@
 #server configuration:
 server:
-  port: 8081
+  port: 8082
   compression:
     enabled: true
   tomcat:
