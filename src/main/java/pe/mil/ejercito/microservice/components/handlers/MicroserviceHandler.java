@@ -1,4 +1,4 @@
-package pe.mil.ejercito.microservice.components.handler;
+package pe.mil.ejercito.microservice.components.handlers;
 
 import com.bxcode.tools.loader.componets.enums.ResponseEnum;
 import com.bxcode.tools.loader.dto.Response;

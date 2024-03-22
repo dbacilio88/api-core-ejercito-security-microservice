@@ -77,20 +77,6 @@
             <optional>true</optional>
         </dependency>
 
-        <!--lib bxcode -->
-        <dependency>
-            <groupId>com.bxcode</groupId>
-            <artifactId>lib-bxcode-tools-loader</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-web</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <!--lib bxcode -->
-
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
@@ -162,6 +148,21 @@
             <version>3.0.0</version>
         </dependency>
 
+        <!--lib bxcode -->
+        <dependency>
+            <groupId>com.bxcode</groupId>
+            <artifactId>lib-bxcode-tools-loader</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-web</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!--lib bxcode -->
+
+        <!-- dependency for test-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -173,7 +174,7 @@
             <artifactId>reactor-test</artifactId>
             <scope>test</scope>
         </dependency>
-
+        <!-- dependency for test-->
     </dependencies>
 
     <build>
